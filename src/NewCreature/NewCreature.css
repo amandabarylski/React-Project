@@ -1,0 +1,67 @@
+#new-creature-form {
+    width: 25%;
+    margin: 2rem;
+    padding: 1rem;
+    border-right: double 8px rgb(0, 148, 0);
+    background-color: black;
+}
+
+fieldset {
+    border-color: rgb(0, 148, 0);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.full-line-label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#creature-name-input {
+    background-color: black;
+    border-color: rgb(0, 148, 0);
+    margin-bottom: 15px;
+}
+
+#creature-name-input:focus {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: dashed rgb(0, 148, 0);
+    outline: none;
+    caret-color: rgb(0, 148, 0);
+    color: rgb(0, 148, 0);
+}
+
+textarea {
+    background-color: black;
+    border-color: rgb(0, 148, 0);
+}
+
+textarea:focus {
+    outline: none;
+    caret-color: rgb(0, 148, 0);
+    color: rgb(0, 148, 0);
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: black;
+    margin: 0;
+    font: inherit;
+    color: rgb(0, 148, 0);
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(0, 148, 0);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  input[type="radio"]:checked {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(0, 148, 0);
+  }

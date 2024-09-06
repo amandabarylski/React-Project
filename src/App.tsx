@@ -8,10 +8,10 @@ import NewCreature from './NewCreature/NewCreature'
 function App() {
 
   return (
-    <>
-      <Bestiary creatures={exampleCreatures} />
+    <div id='flex-container'>
       <NewCreature />
-    </>
+      <Bestiary creatures={exampleCreatures} />
+    </div>
   )
 }
 
