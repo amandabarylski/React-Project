@@ -1,0 +1,64 @@
+.bestiary-entry {
+    margin-bottom: 15px;
+    padding: 2px;
+    align-self: center;
+    border: dashed 2px rgb(0, 148, 0);
+}
+
+h2 {
+    border-bottom: dashed 2px rgb(0, 148, 0);
+    text-align: left;
+    padding: 5px;
+}
+
+h3 {
+    border-bottom: dashed 2px rgb(0, 148, 0);
+    text-align: right;
+    padding: 5px;
+}
+
+.combat-advice {
+    border-bottom: dashed 2px rgb(0, 148, 0);
+    padding: 5px;
+}
+
+h4 {
+    padding: 5px;
+}
+
+.data-container {
+    display: flex;
+    padding: 5px;
+}
+
+.button-div {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.edit-button {
+    background-color: black;
+    color: rgb(0, 148, 0);
+    border: outset rgb(0, 148, 0);
+    height: 2rem;
+    width: 4rem;
+    margin-bottom: 15px;
+}
+
+.edit-button:hover {
+   cursor: pointer;
+}
+
+.delete-button {
+    background-color: black;
+    color: red;
+    border: outset red;
+    height: 2rem;
+    width: 4rem;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+}
