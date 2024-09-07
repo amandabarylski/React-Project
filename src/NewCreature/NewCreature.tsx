@@ -12,7 +12,7 @@ export default function NewCreature () {
             <h2>Enter New Creature Data</h2>
             <form>
                 <label htmlFor='creature-name-input' className='full-line-label'>Creature Name</label>
-                <input type='text' id='creature-name-input'></input>
+                <input type='text' id='creature-name-input' required></input>
                 <fieldset>
                     <legend>Where did you encounter it?</legend>
                     <label><input type='radio' name='location' id='interior'></input> interior</label>
@@ -25,7 +25,8 @@ export default function NewCreature () {
                     <label><input type='radio' name='defeat' id='impossible'></input> impossible</label>
                 </fieldset>
                 <label htmlFor='description-input' className='full-line-label'>Give a brief description of the creature.</label>
-                <textarea id='description-input'></textarea>
+                <textarea id='description-input' required></textarea>
+                <button type='button' id='submit-button'>Add</button>
             </form>
         </div>
     )

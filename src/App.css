@@ -7,3 +7,9 @@ body {
 #flex-container {
   display: flex;
 }
+
+@media only screen and (max-width: 1275px) {
+  #flex-container {
+    display: block;
+  }
+}

@@ -3,7 +3,6 @@ import './CreatureData.css'
 import { Creature } from "../../types";
 
 //I had an error on the bestiary page until I added the interface here.
-//I am still not 100% sure what this does, but having it removes the error and that's what I need for now.
 interface CreatureDataProps {
     creature: Creature
 }
