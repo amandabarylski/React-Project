@@ -26,3 +26,21 @@ Your project should meet these requirements:
     - No red errors/warnings in the console in the browser
 
     - No type errors in VS Code
+
+# Part 2
+
+1. Move your test data into state
+2. Implement the create ability.
+3. Implement the delete ability.
+4. Implement the update ability.
+5. Test
+
+At this point, your project must meets these new requirements:
+
+    A user can create new items (the new items will all have the same data)
+
+    A user can delete items
+
+    A user can update at least one property on the items
+
+    As well as the requirements from last week

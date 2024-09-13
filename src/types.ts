@@ -3,5 +3,6 @@ export type Creature = {
     location: string,
     defeat: string,
     description: string,
-    id: string
+    id: number | string,
+    expanded: boolean
 }

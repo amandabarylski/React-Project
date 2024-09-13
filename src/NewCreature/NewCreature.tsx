@@ -1,12 +1,15 @@
 import './NewCreature.css'
 
+type NewCreatureProps = {
+    addCreature: () => void
+}
 
 //To add a creature to the bestiary, I naturally wanted to use a form.
 //Although there's no real way to use the information and the inputs and button won't do anything,
 //it is still a part of the page and I wanted to style everything together.
 //I put the radio buttons inside the labels to make them easier to work with, and customized their appearance with CSS.
 //I also styled the inputs' colors and used flex display to make the form appear on the left side when the screen is large enough.
-export default function NewCreature () {
+export default function NewCreature ({ addCreature }: NewCreatureProps) {
     return (
         <div id='new-creature-form'>
             <h2>Enter New Creature Data</h2>
@@ -26,7 +29,7 @@ export default function NewCreature () {
                 </fieldset>
                 <label htmlFor='description-input' className='full-line-label'>Give a brief description of the creature.</label>
                 <textarea id='description-input' required></textarea>
-                <button type='button' id='submit-button'>Add</button>
+                <button type='button' id='submit-button' onClick={addCreature}>Add</button>
             </form>
         </div>
     )
