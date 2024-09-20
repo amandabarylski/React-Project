@@ -3,6 +3,7 @@ import './App.css'
 import Bestiary from './Bestiary/Bestiary'
 import { exampleCreatures } from './Bestiary/ExampleCreatures'
 import NewCreature from './NewCreature/NewCreature'
+import { Creature } from './types'
 
 //Currently, I am pushing my exampleCreatures array to the Bestiary.
 //Once we start using an API or similar that will be linked here instead.
@@ -23,23 +24,18 @@ function App() {
 //However, I can't increment it when calling the function.
 
 //I eventually decided to make newID a part of state that could change, though it is only needed for addCreature.
-//When I was creating objects with json-server it randomly made unique ids, so when I link this code to a backend
-//I will probably be able to delete this ID creator.
+//When I was creating objects with json-server it randomly made unique ids, so were I to link this code to a backend
+//I would probably be able to delete this ID creator.
 
-  const [newID, setNewID] = useState(5)
+  // const [newID, setNewID] = useState(5)
 
-  const addCreature = () => {
+//When editing my addCreature function to take in the user input from the form, I had to change the Creature type
+//to only accept numbers as the id as TSX was showing the setCreatureList parameters as invalid otherwise.
+  const addCreature = (userInput: Creature) => {
 
-    const newCreature = {
-      name: "Bracken",
-      location: "interior",
-      defeat: "unlikely",
-      description: "A stealth predator. Look at it to scare it away.",
-      id: newID,
-      expanded: true
-    }
+    const newCreature = userInput
 
-    setNewID(newID + 1)
+    // setNewID(newID + 1)
 
     setCreatureList([...creatureList, newCreature])
   }
@@ -65,7 +61,7 @@ function App() {
 
   return (
     <div id='flex-container'>
-      <NewCreature addCreature={addCreature} />
+      <NewCreature addCreature={addCreature} creatures={creatureList} />
       <Bestiary 
       creatures={creatureList} 
       deleteCreature={deleteCreature}

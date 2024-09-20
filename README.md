@@ -44,3 +44,27 @@ At this point, your project must meets these new requirements:
     A user can update at least one property on the items
 
     As well as the requirements from last week
+
+# Part 3
+
+1. Make a create and/or an update form
+2. Test
+
+At this point, your project must meet this new requirement:
+
+    It has either a create form or an update form with at least 2 inputs
+
+
+As well as the requirements from previous weeks:
+
+    It has at least 3 custom React components
+
+    It’s displaying the data
+
+    It’s using at least 1 prop
+
+    A user can create new items
+
+    A user can delete items
+
+    A user can update at least one property on the items
