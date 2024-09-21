@@ -59,13 +59,28 @@ function App() {
     )))
   }
 
+//I started with my updateCreature function as I wasn't sure where to put in the dialog.
+//I used the same map function as toggleCreature, but taking in both the id to update and a new description string.
+//On looking through my instructor's example more closely, I found he attached his delete modal to individual movie cards.
+//As this was my main concern with attaching it to individual creatures, I decided to pass it all the way down
+//and create new modal components (I had forgotten my intention to ask for confirmation on delete which meant I wanted two).
+const updateCreature = (idToUpdate: number, newDescription: string) => {
+  setCreatureList(creatureList => creatureList.map(creature => (
+    creature.id !== idToUpdate ? creature : {
+      ...creature,
+      description: newDescription
+    }
+  )))
+}
+
   return (
     <div id='flex-container'>
       <NewCreature addCreature={addCreature} creatures={creatureList} />
       <Bestiary 
       creatures={creatureList} 
       deleteCreature={deleteCreature}
-      toggleCreature={toggleCreature} />
+      toggleCreature={toggleCreature}
+      updateCreature={updateCreature} />
     </div>
   )
 }

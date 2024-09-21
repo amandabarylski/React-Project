@@ -1,0 +1,39 @@
+dialog {
+    border: none;
+    background-color: rgb(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    align-content: center;
+}
+
+.dialog-interior {
+    background-color: black;
+    border: dashed 2px rgb(0, 148, 0);
+    width: 25vw;
+    margin: auto;
+    padding: 2px;
+}
+
+.are-you-sure {
+    padding: 4px;
+}
+
+.dialog-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.cancel-button {
+    background-color: black;
+    color: rgb(0, 148, 0);
+    border: outset rgb(0, 148, 0);
+    height: 2rem;
+    width: 4rem;
+}
